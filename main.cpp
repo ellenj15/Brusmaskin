@@ -34,6 +34,7 @@ int main()
 
 
 
+
     // Print a message just before exiting.
     std::cout << "* * *" << std::endl;
     std::cout << "Vending machine shutting down ... BYE!" << std::endl << std::endl;
