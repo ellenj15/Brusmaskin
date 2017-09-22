@@ -6,6 +6,7 @@
 
 #include <vector>
 #include <soda.h>
+#include <string>
 
 
 // Declare class VendingMachine
@@ -26,6 +27,9 @@ public:
     // Member function. Returns nothing and takes no parameters.
     void printInventory();
 
+    void publicNameOwner();
+    void printMenu();
+
 
 private:
 
@@ -34,6 +38,7 @@ private:
     // good idea due to reserved names starting with __ and because auto completion of names
     // will work more smoothly.
     std::vector<Soda> sodaTypes_;
+    void nameOwner();
 
 };
 

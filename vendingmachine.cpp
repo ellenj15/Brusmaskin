@@ -28,4 +28,16 @@ void VendingMachine::addType(Soda s)
 void VendingMachine::printInventory()
 {
     std::cout << "Number of soda types registered: " << sodaTypes_.size() << std::endl;
+
+}
+
+void VendingMachine::publicNameOwner()
+{
+    nameOwner();
+}
+
+void VendingMachine::nameOwner()
+{
+    std::string nameOwner = {"Ellen Marie"};
+    std::cout << "Machine owner is: " << nameOwner << std::endl;
 }

@@ -1,6 +1,6 @@
 #include <cstdlib>              // Exit codes for main.
 #include <iostream>             // std::cout
-
+#include <string>
 #include <soda.h>               // Include Soda class header (makes class declaration visible).
 #include <vendingmachine.h>     // Include VendingMachine clase header (makes class declaration visible).
 
@@ -13,11 +13,13 @@ int main()
 {
     // Print a message at startup.
 
+
+
+
     // Create vendingMachine object. Constructor will be called with no parameters.
     VendingMachine vendingMachine;
     // Print inventory using public printInventory member function (method).
     vendingMachine.printInventory();
-
 
     // Create a cola object. Constructor will be called with given parameters.
     Soda cola("Colabrus", 34, 4);
@@ -31,6 +33,7 @@ int main()
     vendingMachine.addType(villa);
     // Print inventory using public printInventory member function (method).
     vendingMachine.printInventory();
+    vendingMachine.publicNameOwner();
 
 
 
